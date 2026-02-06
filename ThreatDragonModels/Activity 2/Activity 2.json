@@ -256,8 +256,8 @@
           },
           {
             "position": {
-              "x": 398,
-              "y": 10
+              "x": 438,
+              "y": -40
             },
             "size": {
               "width": 110,
@@ -688,40 +688,6 @@
             ]
           },
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "Trust Boundary",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              "Trust Boundary"
-            ],
-            "id": "99b737a7-ac1d-47b8-bfd1-2b27b5176e88",
-            "source": {
-              "x": 340,
-              "y": 110
-            },
-            "target": {
-              "x": 560,
-              "y": 100
-            },
-            "vertices": [
-              {
-                "x": 450,
-                "y": 150
-              }
-            ]
-          },
-          {
             "shape": "flow",
             "attrs": {
               "line": {
@@ -741,7 +707,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Insert Feedback Comments",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -755,7 +721,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Insert Feedback Comments"
             ],
             "id": "f873c3d8-4949-4c14-a8f1-e6ffbd3ef010",
             "source": {
@@ -788,7 +754,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "User is Authenticated",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -802,7 +768,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "User is Authenticated"
             ],
             "id": "2d94aed0-9e88-4666-a2e0-a6bb949706c0",
             "source": {
@@ -813,71 +779,7 @@
               "cell": "d78e59ae-b70d-4dc3-b02c-785404ca82e3",
               "port": "b035a2a8-eca7-4974-9574-360b55d64c9d"
             },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -945,7 +847,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "User Sends User Credentials",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -959,7 +861,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "User Sends User Credentials"
             ],
             "id": "9f4ecad8-d5f9-4e29-aef7-8d26fc09c241",
             "source": {
@@ -971,6 +873,40 @@
               "y": 250
             },
             "vertices": []
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 18,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "99b737a7-ac1d-47b8-bfd1-2b27b5176e88",
+            "source": {
+              "x": 350,
+              "y": 90
+            },
+            "target": {
+              "x": 610,
+              "y": 90
+            },
+            "vertices": [
+              {
+                "x": 490,
+                "y": 130
+              }
+            ]
           }
         ]
       }
