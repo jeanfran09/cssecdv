@@ -874,6 +874,19 @@
                   "new": false,
                   "number": 4,
                   "score": ""
+                },
+                {
+                  "id": "779489d7-ed4e-4f27-89f4-3a197e31ac17",
+                  "title": "Sensitive Feedback Data Disclosure",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Data flowing across saved feedback comments may be sniffed by an attacker. Depending on what type of data an attacker can read, it may be used to attack other parts of the system or simply be a disclosure of information leading to compliance violations.",
+                  "mitigation": "Consider encrypting the data flow.",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
                 }
               ],
               "trustBoundaryIds": []
@@ -1215,11 +1228,26 @@
                   "new": false,
                   "number": 7,
                   "score": ""
+                },
+                {
+                  "id": "b06593a6-a556-4bc3-a64b-fb6602cd05a0",
+                  "title": "Unauthorized Data Access in LDAP Directory",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "Improper data protection of LDAP can allow an attacker to read information not intended for disclosure.",
+                  "mitigation": "Review authorization settings",
+                  "modelType": "default",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
                 }
               ]
             },
             "tools": {
               "items": [
+                "boundary",
+                "button-remove",
                 "boundary",
                 "button-remove"
               ],
@@ -1335,6 +1363,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 7
+    "threatTop": 9
   }
 }
